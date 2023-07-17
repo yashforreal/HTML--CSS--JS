@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container{
+            width: 600px;
+            margin: auto;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+        .d1,.d2,.d3{
+            border: 2px solid rgb(78, 1, 150);
+            margin: 10px 1px;
+        }
+        .d1, .d2{
+            width: 40%;
+            float: left;
+            /* float makes elements float in front of other elements in the direction specified */
+        }
+        .d3{
+            clear: left;
+            width: 90%;
+            /* clear denies other elements to overlap if they float on the page */
+            /* try commenting out the clear attribute to see how floating items overlap */
+        }
+    </style>
+    <title>Float and clear</title>
+</head>
+<body>
+    <div class="container">
+        <div class="d1">
+            <h3>Fruits</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti magnam in, fugiat nam, dolorem, dolore non velit voluptatibus nemo reiciendis debitis asperiores dignissimos. lorem40</p>
+        </div>
+        <div class="d2">
+            <h3>Vegetables</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti magnam in, fugiat nam, dolorem, dolore non velit voluptatibus nemo reiciendis debitis asperiores dignissimos.</p>
+        </div>
+        <div class="d3">
+            <h3>Meat</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti magnam in, fugiat nam, dolorem, dolore non velit voluptatibus nemo reiciendis debitis asperiores dignissimos.</p>
+        </div>
+    </div>
+</body>
+</html>
