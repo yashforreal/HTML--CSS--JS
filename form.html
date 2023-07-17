@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample form</title>
+</head>
+
+<body>
+    <form method="post" action="submit">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="Name" id="name">
+        </div>
+        <br>
+        <div>
+            <label for="contact">Contact</label>
+            <input type="number" name="Contact" id="contact">
+        </div>
+        <br>
+        <div>
+            <label for="gender">Gender</label>
+            <select name="Gender" id="gender">
+                <option value="">Select</option>
+                <option value="">Male</option>
+                <option value="">Female</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label>Skills</label><br>
+            ReactJS <input type="checkbox" name="reactjs" id="skill1">
+            Dotnet <input type="checkbox" name="dotnet" id="skill2">
+            Flutter <input type="checkbox" name="flutter" id="skill3">
+            Django<input type="checkbox" name="django" id="skill4">
+        </div>
+        <br>
+        <div>
+            <label for="graduation">Year of Graduation</label><br>
+            2021<input type="radio" name="graduation" id="graduation">
+            2020<input type="radio" name="graduation" id="graduation">
+            2019<input type="radio" name="graduation" id="graduation">
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clear form">
+        </div>
+    </form>
+</body>
+
+</html>
