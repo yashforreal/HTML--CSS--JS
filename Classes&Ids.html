@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contains info about classes, ids and html entities">
+    <title>Classes, Ids and HTML entities</title>
+    <style>
+        #mainContainer{
+            border: 1px solid darkcyan;
+        }
+        .para{
+            font-size: large;
+        }
+        .italics{
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div id="mainContainer">
+        <p class="para italics">
+            This paragraph is written in italics using css
+        </p>
+        <p class="italics">
+            This paragraph is &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; paragraph and the extra spaces are added using the HTML attribute &nbsp        </p>
+    </div>
+    <div>
+        <p>
+            This paragraph is closed under the &lt;p&gt;
+        </p>
+        <p>
+            Oh, how was I able to add the opening and closing tag without the html compiler knowing, so we use lt and gt tag for it
+        </p>
+        <p>
+            You can search for other entities on the internet
+        </p>
+        <p>
+            Fun fact: this is an empty character: &#8203;
+        </p>
+    </div>
+</body>
+</html>
