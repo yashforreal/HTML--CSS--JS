@@ -1,7 +1,7 @@
 # HTML--CSS--JS
 ## This repo contains basics of HTML, CSS and JavaScript
 <hr>
-### Contents:
+<h3> Contents: </h3>
 <ol>
   <li>
 HTML basics:
