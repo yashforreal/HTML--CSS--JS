@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            height: 200vh;
+        }
+        p{
+            mix-blend-mode: difference;
+        }
+        .container{
+            border: 3px solid black;
+            border-radius: 20px;
+        }
+        .item{
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            border-radius: 50px;
+            margin: 2px;
+            mix-blend-mode: difference;
+            color: white;
+            text-align: center;
+            overflow: hidden;
+            box-sizing: border-box;
+            padding: 5px;
+        }
+        .item-1{
+            background-color: blue;
+        }
+        .item-2{
+            background-color: pink;
+            position: relative;
+            top: 50px;
+            left: 50px;
+        }
+        .item-3{
+            background-color: yellow;
+        }
+        .item-4{
+            background-color: green;
+            position: fixed;
+            top: 10px;
+            right: 30px;
+        }
+        .item-5{
+            background-color: orange;
+        }
+        .item-6{
+            background-color: orangered;
+        }
+        .item-7{
+            background-color: purple;
+            position: absolute;
+            top: 80px;
+            left: 30px;
+        }
+        .item-8{
+            background-color: rgb(17, 165, 153);
+        }
+    </style>
+    <title>Positions 2</title>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1"><p></p></div>
+        <div class="item item-2"><p> I am displaced relative to my original position, for I am relative</p></div>
+        <div class="item item-3"><p></p></div>
+        <div class="item item-4"><p> scroll to see the magic, I am fixed</p></div>
+        <div class="item item-5"><p></p></div>
+        <div class="item item-6"><p></p></div>
+        <div class="item item-7"><p>I am displaced from my parent's original position, cuz i am absolute</p></div>
+        <div class="item item-8"><p></p></div>
+    </div>
+</body>
+</html>
