@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-image: url(https://t4.ftcdn.net/jpg/03/50/81/89/360_F_350818949_lJTfzSTDr79e9Kn55PUVZjN19ct20uGc.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        .logo {
+            flex: 1;
+            order: 1;
+            color: silver;
+            width: 100px;
+        }
+
+        .navbar {
+            flex: 2;
+            order: 2;
+            display: flex;
+            justify-content: center;
+        }
+
+        ul {
+            padding: 0;
+        }
+
+        .navbar li {
+            cursor: default;
+            display: inline-block;
+            list-style: none;
+            text-decoration: none;
+            color: silver;
+            padding: 0px 10px;
+        }
+
+        .navbar li:hover {
+            color: rgb(255, 244, 244);
+        }
+
+        .callToAction {
+            flex: 1;
+            order: 3;
+            display: flex;
+            justify-content: flex-end;
+        }
+    </style>
+    <title>Yash's Fitness</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            Yash's Fitness
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li>Home</li>
+                <li>Programmes</li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+            </ul>
+        </nav>
+        <div class="callToAction">
+            <button>Register</button>
+            <button>Login</button>
+        </div>
+    </header>
+</body>
+
+</html>
