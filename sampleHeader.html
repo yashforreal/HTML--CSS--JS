@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .logo {
+            flex: 1;
+            order: 1;
+        }
+
+        .navbar {
+            flex: 2;
+            order: 2;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .login-register {
+            flex: 1;
+            order: 3;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .login-register button {
+            margin: 0 5px;
+            padding: 8px 12px;
+            background-color: #555;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Media query for responsiveness */
+        @media screen and (max-width: 768px) {
+            .navbar {
+                flex: 1;
+            }
+        }
+    </style>
+    <title>Website Header</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Your Logo</div>
+        <nav class="navbar">
+            <!-- Add your navbar links here -->
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="login-register">
+            <button class="login">Login</button>
+            <button class="register">Register</button>
+        </div>
+    </header>
+</body>
+
+</html>
