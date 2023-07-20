@@ -13,29 +13,35 @@
             padding: 0;
         }
 
-        .header {
+        header {
             display: flex;
             align-items: center;
             justify-content: space-between;
             padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            display: block;
+            width: 75px;
+            margin: auto;
         }
 
         .logo {
             flex: 1;
             order: 1;
             color: silver;
-            width: 100px;
         }
 
         .navbar {
             flex: 2;
             order: 2;
-            display: flex;
-            justify-content: center;
         }
 
         ul {
             padding: 0;
+            display: flex;
+            justify-content: center;
         }
 
         .navbar li {
@@ -57,6 +63,51 @@
             display: flex;
             justify-content: flex-end;
         }
+
+        .callToAction button {
+            text-decoration: none;
+            padding: 5px;
+            margin: auto 5px;
+            background-color: silver;
+            border-radius: 5px;
+            border: 1px solid white;
+        }
+
+        .callToAction button:hover {
+            background-color: rgb(239, 236, 236);
+        }
+
+        .callToAction button:active {
+            background-color: white;
+        }
+
+        .form-group {
+            color: white;
+            margin: 40px;
+            padding: 40px;
+            border: 2px solid white;
+            border-radius: 10px;
+            width: 50%;
+        }
+        .form-group input{
+            display: block;
+            padding: 5px;
+            margin-bottom: 15px;
+            margin: 15px auto;
+            width: 70%;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+        .form-group button{
+            font-size: 25px;
+            color: black;
+            padding: 10px;
+            background-color: rgb(246, 246, 246);
+            width: 40%;
+            display: block;
+            margin: auto;
+            border-radius: 20px;
+        }
     </style>
     <title>Yash's Fitness</title>
 </head>
@@ -64,7 +115,10 @@
 <body>
     <header>
         <div class="logo">
-            Yash's Fitness
+            <img src="https://cdn1.vectorstock.com/i/1000x1000/70/55/gym-logo-vector-26657055.jpg" alt="logo">
+            <div style="text-align: center;">
+                Yash's Fitness
+            </div>
         </div>
         <nav class="navbar">
             <ul>
@@ -79,6 +133,16 @@
             <button>Login</button>
         </div>
     </header>
+    <div class="form-group">
+        <form>
+            <h1>Join the programme now!</h1>
+            <input type="text" placeholder="name" name="name">
+            <input type="text" placeholder="mobile" name="mobile">
+            <input type="text" placeholder="email" name="email">
+            <input type="text" placeholder="location" name="location">
+            <button type="submit">submit</button>
+        </form>
+    </div>
 </body>
 
 </html>
