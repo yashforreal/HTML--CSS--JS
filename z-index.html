@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .box {
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+        }
+
+        #box1 {
+            background-color: blue;
+            /* z-index does not work in static position */
+            position: relative;
+            top:25px;
+        }
+
+        #box2 {
+            background-color: red;
+            position: relative;
+            /* remove relative and z-index will cease its effect */
+            /* the element with a higher z-index stays on top of other elements */
+            z-index: 1;
+        }
+
+        #box3 {
+            background-color: yellow;
+        }
+
+        #box4 {
+            background-color: green;
+        }
+    </style>
+    <title>z-index</title>
+</head>
+
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+
+</html>
